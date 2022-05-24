@@ -23,12 +23,12 @@ namespace Baku_London
        
         public void Timer_Tick(object sender, EventArgs e)
         {
-            this.Text = DateTime.Now.ToLongTimeString();
+            this.Text = "Baku";
             label1.Text = DateTime.Now.ToLongTimeString();
         }
         public void TimerLndn_Tick(object sender, EventArgs e)
         {
-            this.Text = DateTime.Now.AddHours(4).ToLongTimeString();
+            this.Text = "London";
             label1.Text = DateTime.Now.AddHours(4).ToLongTimeString();
         }    
         
@@ -37,12 +37,12 @@ namespace Baku_London
             Timer.Stop();
             Timer.Tick += TimerLndn_Tick;
             Timer.Interval = 1000;
-            this.BackgroundImage = Properties.Resources.London;
+            pictureBox_Baku.Image = Properties.Resources.London;
 
             Timer.Start();
-            this.Text = DateTime.Now.AddHours(4).ToLongTimeString();
+            this.Text = "London";
             btn_London.BackColor = Color.DarkTurquoise;
-            btn_London.BackColor = Color.Red;
+            btn_London.BackColor = Color.DarkMagenta;
         }
 
         private void btn_Baku_MouseClick(object sender, MouseEventArgs e)
@@ -51,10 +51,10 @@ namespace Baku_London
             Timer.Tick += Timer_Tick;
             Timer.Interval = 1000;
 
-            this.BackgroundImage = Properties.Resources.Baku;
+            pictureBox_Baku.Image = Properties.Resources.Baku;
 
             Timer.Start();
-            this.Text = DateTime.Now.ToString("HH:mm:ss");
+            this.Text = "Baku";
             btn_Baku.BackColor = Color.DarkTurquoise;
             btn_Baku.BackColor = Color.Red;
         }

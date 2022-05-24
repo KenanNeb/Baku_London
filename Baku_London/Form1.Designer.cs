@@ -33,7 +33,9 @@ namespace Baku_London
             this.btn_Baku = new Baku_London.KNControls.KNButtons();
             this.pictureBox_Baku = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox_London = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Baku)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_London)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_London
@@ -77,9 +79,9 @@ namespace Baku_London
             // pictureBox_Baku
             // 
             this.pictureBox_Baku.Image = global::Baku_London.Properties.Resources.Baku;
-            this.pictureBox_Baku.Location = new System.Drawing.Point(-1, -1);
+            this.pictureBox_Baku.Location = new System.Drawing.Point(-6, -3);
             this.pictureBox_Baku.Name = "pictureBox_Baku";
-            this.pictureBox_Baku.Size = new System.Drawing.Size(638, 422);
+            this.pictureBox_Baku.Size = new System.Drawing.Size(629, 430);
             this.pictureBox_Baku.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox_Baku.TabIndex = 2;
             this.pictureBox_Baku.TabStop = false;
@@ -87,26 +89,38 @@ namespace Baku_London
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(281, 187);
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(239, 191);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(51, 15);
+            this.label1.Size = new System.Drawing.Size(127, 40);
             this.label1.TabIndex = 3;
             this.label1.Text = "lbl_Time";
+            // 
+            // pictureBox_London
+            // 
+            this.pictureBox_London.Image = global::Baku_London.Properties.Resources.London;
+            this.pictureBox_London.Location = new System.Drawing.Point(-6, -3);
+            this.pictureBox_London.Name = "pictureBox_London";
+            this.pictureBox_London.Size = new System.Drawing.Size(630, 450);
+            this.pictureBox_London.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox_London.TabIndex = 4;
+            this.pictureBox_London.TabStop = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Baku_London.Properties.Resources.London;
             this.ClientSize = new System.Drawing.Size(624, 421);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_Baku);
             this.Controls.Add(this.btn_London);
             this.Controls.Add(this.pictureBox_Baku);
+            this.Controls.Add(this.pictureBox_London);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Baku)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_London)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -118,6 +132,7 @@ namespace Baku_London
         private KNControls.KNButtons btn_Baku;
         private System.Windows.Forms.PictureBox pictureBox_Baku;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox_London;
     }
 }
 
